@@ -1,0 +1,650 @@
+[
+    {
+        "id": "a2c0f106cf73536b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "466ff741ef9fd231",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "478aac25505498b4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9c449d50d87c7c90",
+        "type": "ui_group",
+        "name": "Environment Monitor",
+        "tab": "466ff741ef9fd231",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ba5a7cbb254a8329",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c0acc21143169cf5",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "home",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4c59fa84df1427ba",
+        "type": "ui_tab",
+        "name": "Login",
+        "icon": "login",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b7b6145ee89da253",
+        "type": "ui_tab",
+        "name": "Smart Farm",
+        "icon": "smart farm",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "acfbf0d7085f55bf",
+        "type": "ui_group",
+        "name": "Welcome",
+        "tab": "c0acc21143169cf5",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d39fa38905aa9dca",
+        "type": "ui_spacer",
+        "z": "a2c0f106cf73536b",
+        "name": "spacer",
+        "group": "9c449d50d87c7c90",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "04c1102bf66e7112",
+        "type": "ui_spacer",
+        "z": "a2c0f106cf73536b",
+        "name": "spacer",
+        "group": "9c449d50d87c7c90",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "dfd0de8377134ad6",
+        "type": "ui_spacer",
+        "z": "a2c0f106cf73536b",
+        "name": "spacer",
+        "group": "9c449d50d87c7c90",
+        "order": 4,
+        "width": "3",
+        "height": "1"
+    },
+    {
+        "id": "88e76eb754cf79ae",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "b7b6145ee89da253",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7ac20e27e38192f0",
+        "type": "mqtt in",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "topic": "smartfarm/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ba5a7cbb254a8329",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "0903931f40a1ed9b"
+            ]
+        ]
+    },
+    {
+        "id": "0903931f40a1ed9b",
+        "type": "ui_gauge",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "group": "9c449d50d87c7c90",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "25",
+        "diff": false,
+        "className": "",
+        "x": 310,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "5d8ec0bcf5f77f6d",
+        "type": "inject",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "25",
+        "payloadType": "num",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "0903931f40a1ed9b",
+                "aa208e141ec133c2"
+            ]
+        ]
+    },
+    {
+        "id": "7853a16bc65fd86c",
+        "type": "ui_gauge",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "group": "9c449d50d87c7c90",
+        "order": 3,
+        "width": "6",
+        "height": 3,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "50",
+        "seg2": "80",
+        "diff": false,
+        "className": "",
+        "x": 400,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1c4d98f00dae3fbf",
+        "type": "inject",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "90",
+        "payloadType": "num",
+        "x": 230,
+        "y": 500,
+        "wires": [
+            [
+                "7853a16bc65fd86c"
+            ]
+        ]
+    },
+    {
+        "id": "aa208e141ec133c2",
+        "type": "ui_chart",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "group": "9c449d50d87c7c90",
+        "order": 2,
+        "width": 6,
+        "height": 3,
+        "label": "Temperature History",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 360,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3ac7ea272e673d2",
+        "type": "inject",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 620,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5bfd590a38f1b0b",
+        "type": "ui_template",
+        "z": "a2c0f106cf73536b",
+        "group": "acfbf0d7085f55bf",
+        "name": "Home Content",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align:center;padding:30px;\">\n    <h1>🌱 SMART FARM</h1>\n    <h2>Hệ thống giám sát nông nghiệp thông minh</h2>\n    <hr>\n    <p>🌡 Theo dõi nhiệt độ</p>\n    <p>💧 Theo dõi độ ẩm</p>\n    <p>🌱 Theo dõi độ ẩm đất</p>\n    <p>🚿 Điều khiển máy bơm</p>\n    <p>🪭 Điều khiển quạt</p>\n    <br>\n    <h3>VLCNTT - Smart Farm</h3>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 580,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8f376fc174705cd",
+        "type": "ui_gauge",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "group": "88e76eb754cf79ae",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Soil Moisture",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 430,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "32e0e530db1c8a3b",
+        "type": "ui_switch",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "label": "Pump",
+        "tooltip": "",
+        "group": "88e76eb754cf79ae",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 680,
+        "wires": [
+            [
+                "09a51f8e0d12cf9a"
+            ]
+        ]
+    },
+    {
+        "id": "fcc63ea4603c827f",
+        "type": "ui_switch",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "label": "Fan",
+        "tooltip": "",
+        "group": "88e76eb754cf79ae",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 430,
+        "y": 760,
+        "wires": [
+            [
+                "79947293464644ad",
+                "1537ab9202c534a3"
+            ]
+        ]
+    },
+    {
+        "id": "013e0fb526fdee53",
+        "type": "debug",
+        "z": "a2c0f106cf73536b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "79947293464644ad",
+        "type": "debug",
+        "z": "a2c0f106cf73536b",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "09a51f8e0d12cf9a",
+        "type": "mqtt out",
+        "z": "a2c0f106cf73536b",
+        "name": "Pump MQTT",
+        "topic": "smartfarm/pump",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ba5a7cbb254a8329",
+        "x": 650,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "1537ab9202c534a3",
+        "type": "mqtt out",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "topic": "smartfarm/fan",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ba5a7cbb254a8329",
+        "x": 640,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "aeda7246bde8a83f",
+        "type": "mqtt in",
+        "z": "a2c0f106cf73536b",
+        "name": "",
+        "topic": "smartfarm/pump",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ba5a7cbb254a8329",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 860,
+        "y": 680,
+        "wires": [
+            [
+                "013e0fb526fdee53"
+            ]
+        ]
+    }
+]
